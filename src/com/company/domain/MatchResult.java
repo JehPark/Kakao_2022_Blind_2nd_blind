@@ -14,6 +14,14 @@ public class MatchResult {
         win++;
     }
 
+    public double getTotal() {
+        return total;
+    }
+
+    public double getWin() {
+        return win;
+    }
+
     public void loseGame(){
         total++;
     }

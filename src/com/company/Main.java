@@ -56,7 +56,7 @@ public class Main {
         final MatchService matchService = new MatchService(waitingLine, userInfo);
         Commands commands = matchService.initGrade();
         String commandsJson = gson.toJson(commands, Commands.class);
-        String commandResponse = changeGradeConn.makeConnection(ApiMethods.PUT_METHOD, Headers.AUTHORIZATION, commandsJson);
+        changeGradeConn.makeConnection(ApiMethods.PUT_METHOD, Headers.AUTHORIZATION, commandsJson);
 
         userInfoResponse = userInfoConn.makeConnection(ApiMethods.GET_METHOD, Headers.AUTHORIZATION);
         userInfo = gson.fromJson(userInfoResponse, UserInfo.class);
@@ -82,7 +82,7 @@ public class Main {
             commands = matchService.updateGrade(gameResults);
             System.out.println(gameResults);
             commandsJson = gson.toJson(commands, Commands.class);
-            commandResponse = changeGradeConn.makeConnection(ApiMethods.PUT_METHOD, Headers.AUTHORIZATION, commandsJson);
+            changeGradeConn.makeConnection(ApiMethods.PUT_METHOD, Headers.AUTHORIZATION, commandsJson);
             userInfoResponse = userInfoConn.makeConnection(ApiMethods.GET_METHOD, Headers.AUTHORIZATION);
             userInfo = gson.fromJson(userInfoResponse, UserInfo.class);
             matchService.setUsers(userInfo.getUser_info());
