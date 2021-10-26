@@ -123,7 +123,7 @@ public class MatchService {
             commands.addUserInCommands(loser.getId(), loserPoint);
         }
     }
-
+    
     private int getLoserPoint(User loser, MatchResult loserMatch) {
         int loserPoint = 0;
         if (loserMatch.getTotal() <= 5){

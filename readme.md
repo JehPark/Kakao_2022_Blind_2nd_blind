@@ -8,7 +8,8 @@
 2. 매칭 알고리즘은 점점 엄격하게 변하도록 바꾸었습니다.
 3. 매치결과 오브젝트의 도입으로 어뷰저를 탐색하는 시스템을 도입하려고합니다.
 
-
+cf. 아쉬운점은 게임길이와 관련한 정보를 사용하지 않았다는 것이다.
+문제에 해당 식이 주어졌는데 그 식을 역연산해서 사용했으면 조금더 정확한 알고리즘이 나왔을거 같다.
 ## Library  
 1. GSON: 2.8.8 version License: https://www.apache.org/licenses/LICENSE-2.0.txt
 2. JSON in Java: 20210307 version License: http://json.org/license.html
